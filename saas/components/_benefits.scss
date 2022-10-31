@@ -1,15 +1,22 @@
+/** @format */
+
+.benefits__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 .benefits {
   padding-top: 94px;
 }
-.benefits-list {
+.benefits__list {
   display: flex;
 }
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.icon-container {
+.icon__container {
   width: 270px;
   height: 120px;
   background: var(--benefits-background-icon-color);

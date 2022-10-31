@@ -1,5 +1,12 @@
+/** @format */
 
-.services-section {
+.services__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.services__section {
   padding-bottom: 94px;
   padding-top: 94px;
   font-weight: 700;
@@ -16,18 +23,18 @@
   text-align: center;
 }
 
-.services-list {
+.services__list {
   display: flex;
 }
-.services-list .services-list-item + .services-list-item {
+.services__list .services-list__item + .services-list__item {
   margin-left: 30px;
 }
 
-.services-list-item {
+.services-list__item {
   position: relative;
 }
 
-.services-list-text {
+.services-list__text {
   display: flex;
   align-items: center;
   justify-content: center;
