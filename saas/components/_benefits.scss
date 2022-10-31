@@ -1,0 +1,32 @@
+
+.benefits {
+  padding-top: 94px;
+}
+.benefits-list {
+  display: flex;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-container {
+  width: 270px;
+  height: 120px;
+  background: var(--benefits-background-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: var(--paragraph-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.paragraph:not(:last-child) {
+  margin-right: 30px;
+}

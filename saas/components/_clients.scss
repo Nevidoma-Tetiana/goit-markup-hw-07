@@ -1,0 +1,40 @@
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list-item + .clients-list-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon-team);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-icon-team);
+  transition: fill 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
