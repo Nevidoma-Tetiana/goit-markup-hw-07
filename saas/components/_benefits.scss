@@ -1,11 +1,5 @@
 /** @format */
 
-.benefits__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .benefits {
   padding-top: 94px;
 }
@@ -16,7 +10,7 @@
   margin-right: 30px;
 }
 
-.icon__container {
+.benefits__container {
   width: 270px;
   height: 120px;
   background: var(--benefits-background-icon-color);

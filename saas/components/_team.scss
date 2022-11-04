@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-.team-list__item {
+.team__item {
   background-color: var(--primary-white-color);
   width: 270px;
   border-radius: 0px 0px 4px 4px;
@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-.soc__list {
+.soc {
   display: flex;
   justify-content: center;
 }

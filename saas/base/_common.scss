@@ -1,8 +1,14 @@
+/** @format */
+
+*,
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
 
 html {
   box-sizing: border-box;
 }
-
 
 .list,
 .nav__list,
