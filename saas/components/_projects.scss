@@ -1,80 +1,57 @@
-
-.projects-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.projects {
-  margin-bottom: 4px;
-  margin-top: 0;
-  color: var(--primary-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  font-size: 18px;
-}
-
-.projects-list {
+.project-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.projects-item {
+  transition: box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.projects-list-item {
-  width: 370px;
-  box-sizing: border-box;
-  margin-right: 30px;
-  margin-bottom: 30px;
+.projects-item-wrap {
+  overflow: hidden;
+  position: relative;
 }
-
-.projects-list-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects-list-item:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-.projects-item-text {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: 0;
-}
-.projects-type {
-  margin: 0;
-  color: var(--paragraph-text-color);
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-}
-
-.projects-list-item:hover,
-.projects-list-item:focus {
-  border: 1px solid var(--border-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-list-img {
+.projects-item-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms var(--timing-function);
+  overflow: auto;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--primary-white-color);
+  font-family: 'Roboto';
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  height: 100%;
-  padding: 63px 24px;
-  margin: 0;
-  transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
-.projects-list-item:hover &,
-.projects-list-item:focus & {
-  transform: translateY(0);
-}
+  letter-spacing: 0.54px;
+  .projects-item-wrap:hover & {
+    transform: translateX(0);
+  }
 }
 
-.projects-top-wrap {
-  position: relative;
-  overflow: hidden;
+.project-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
-
+.project-text {
+  color: var(--second-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.48px;
+}

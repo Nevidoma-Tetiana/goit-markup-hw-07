@@ -3,11 +3,10 @@
 @import './base/reset';
 @import './utils/hide';
 @import './components/container';
-@import './components/site-nav';
+@import './components/nav-list';
 @import './components/header';
 @import './components/contacts';
 @import './components/hero';
-@import './components/section';
 @import './components/button';
 @import './components/services';
 @import './components/benefits';
@@ -17,3 +16,4 @@
 @import './components/logo';
 @import './components/modal';
 @import './components/projects';
+@import './components/backdrop';

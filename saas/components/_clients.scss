@@ -1,40 +1,40 @@
-
 .clients {
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
-
-.clients__header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+.clients-title {
+  color: currentColor;
   text-align: center;
-
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.clients__list {
+.clients-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 42px;
 }
 
-.clients__item + .clients__item {
-  margin-left: 30px;
+.clients-item {
+  border-radius: 4px;
+  border: 1px solid var(--icon-color);
 }
-
-.clients__link {
+.clients-link {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--color-icon-team);
-  border-radius: 4px;
+  fill: var(--icon-color);
   display: flex;
-  align-items: center;
   justify-content: center;
-  fill: var(--color-icon-team);
-  transition: fill 250ms var(--timing-function),
-    border 250ms var(--timing-function);
+  align-items: center;
+  transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
   &:hover,
   &:focus {
-    fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
   }
 }
